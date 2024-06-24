@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:project_local_storage/view/widgets/notes_view_body.dart';
 
 class NotesView extends StatelessWidget {
@@ -12,7 +11,9 @@ class NotesView extends StatelessWidget {
         backgroundColor: Colors.blueAccent,
         shape: const CircleBorder(
             side: BorderSide(width: 0, color: Colors.blueAccent)),
-        onPressed: () {},
+        onPressed: () {
+          showBottomSheet(context);
+        },
         child: const Icon(
           Icons.add,
           color: Colors.black,
@@ -27,5 +28,10 @@ class NotesView extends StatelessWidget {
         child: NotesViewBody(),
       ),
     );
+  }
+  void showBottomSheet(BuildContext context) {
+     showModalBottomSheet(context: context, builder: (context){
+      return Container();
+    });
   }
 }
