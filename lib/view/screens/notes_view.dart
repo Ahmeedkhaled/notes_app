@@ -10,12 +10,13 @@ class NotesView extends StatelessWidget {
     return Scaffold(
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.blueAccent,
-        shape: const CircleBorder(side: BorderSide(width: 0,color: Colors.blueAccent)),
+        shape: const CircleBorder(
+            side: BorderSide(width: 0, color: Colors.blueAccent)),
         onPressed: () {},
         child: const Icon(
           Icons.add,
-          color:Colors.black,
-          size: 30,
+          color: Colors.black,
+          size: 25,
         ),
       ),
       body: const Padding(
