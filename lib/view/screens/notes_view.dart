@@ -11,7 +11,6 @@ class NotesView extends StatelessWidget {
         padding: EdgeInsets.symmetric(
           horizontal: 24,
           vertical: 24,
-
         ),
         child: NotesViewBody(),
       ),
