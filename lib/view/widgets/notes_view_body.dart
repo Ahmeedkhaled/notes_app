@@ -1,7 +1,9 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:project_local_storage/view/widgets/custom_app_bar.dart';
 import 'package:project_local_storage/view/widgets/notes_item.dart';
+import 'package:project_local_storage/view/widgets/notes_listview.dart';
 
 class NotesViewBody extends StatelessWidget {
   const NotesViewBody({super.key});
@@ -16,7 +18,7 @@ class NotesViewBody extends StatelessWidget {
           SizedBox(
             height: MediaQuery.of(context).size.height*0.02,
           ),
-          const NotesItem(),
+          const Expanded(child:  NotesListView()),
         ],
 
     ));
