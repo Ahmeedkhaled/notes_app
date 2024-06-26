@@ -10,17 +10,18 @@ class NotesViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  SafeArea(
-      child: 
-      Column(
-        children: [
-          const CustomAppBar(),
-          SizedBox(
-            height: MediaQuery.of(context).size.height*0.02,
-          ),
-          const Expanded(child:  NotesListView()),
-        ],
-
+    return SafeArea(
+        child: Column(
+      children: [
+        const CustomAppBar(
+          title: "Notes",
+          icon: Icons.search,
+        ),
+        SizedBox(
+          height: MediaQuery.of(context).size.height * 0.02,
+        ),
+        const Expanded(child: NotesListView()),
+      ],
     ));
   }
 }
